@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="622.0" prefWidth="1025.0" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.storify.controllers.VentanaEstadisticasController">
+   <children>
+      <Pane layoutX="20.0" layoutY="22.0" prefHeight="579.0" prefWidth="983.0" stylesheets="@../aplicacion.css">
+         <children>
+            <Text fill="#323232" layoutX="412.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estadísticas Storify" wrappingWidth="426.1279296875">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <BarChart fx:id="chart" layoutX="24.0" layoutY="194.0" prefHeight="365.0" prefWidth="426.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="yAxis" side="LEFT" />
+              </yAxis>
+            </BarChart>
+            <Text fx:id="txtTituloEstadistica" fill="#323232" layoutX="42.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estadísticas de Géneros Musicales" wrappingWidth="426.1279296875">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <PieChart fx:id="pieChart" layoutX="493.0" layoutY="190.0" prefHeight="354.0" prefWidth="453.0" />
+            <Button fx:id="btnAnalizar" layoutX="363.0" layoutY="90.0" mnemonicParsing="false" onAction="#analizar" prefHeight="31.0" prefWidth="157.0" text="Analizar" />
+            <ComboBox fx:id="comboEstadistica" layoutX="42.0" layoutY="90.0" prefHeight="31.0" prefWidth="241.0" />
+            <Text fill="#323232" layoutX="42.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Eliga el componente que desee analizar:" wrappingWidth="426.1279296875">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+         </children>
+         <styleClass>
+            <String fx:value="shadowPane" />
+            <String fx:value="white-bg" />
+         </styleClass>
+      </Pane>
+   </children>
+</Pane>

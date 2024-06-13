@@ -1,0 +1,185 @@
+.white-color{
+    -fx-background-color: #fff; }
+
+.transparent{
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+.search-bar {
+    -fx-border-width: 1;
+    -fx-border-color: #686868;
+}
+
+.selected{
+    -fx-background-color: #F4F4F4;
+    -fx-border-width: 85;
+    -fx-border-color: #F30008
+}
+
+.btnIngresar{
+    -fx-background-color: linear-gradient(to bottom, #6D0096, #A00000);
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-opacity: 1.0;
+}
+
+.btnBlanco{
+    -fx-background-color: linear-gradient(to bottom, #fff, #fff);
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-opacity: 1.0;
+}
+
+.panelFiltrar{
+    -fx-background-color: linear-gradient(to bottom, #6D0096, #A00000);
+    -fx-background-radius: 20;
+    -fx-border-radius:20;
+    -fx-opacity: 1.0;
+}
+
+.cursor_hand{
+    -fx-cursor:hand
+}
+
+.btnIngresar:hover{
+    -fx-background-color: linear-gradient(to bottom, #6D0096, #A00000);
+    -fx-border-color: transparent;
+
+}
+
+
+.over:hover{
+    -fx-background-color: #d3d1d1;
+}
+
+.shadowPane{
+    -fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.5), 6,0,0,0);
+}
+
+.shadowDarkPane{
+    -fx-effect:dropshadow(three-pass-box, rgba(0,0,0,4), 6,0,0,0);
+}
+
+
+.white-bg{
+    -fx-background-color:#fff;
+    -fx-background-radius:8px;
+}
+
+
+.filtroPanel{
+    -fx-border-radius: 8px;
+    -fx-background-radius:8px;
+    -fx-border-color: #4A4A4A;
+    -fx-background-color:#4A4A4A;
+}
+
+.filtroPanel:hover{
+    -fx-background-color:#686868;
+}
+
+.gradientPanel{
+    -fx-background-color: linear-gradient(to bottom right, #6D0096, #A00000);
+}
+
+.panel_transparent {
+    -fx-background-color: rgba(255, 255, 255, 0.8);
+}
+
+.login_button{
+    -fx-background-color: transparent;
+    -fx-border-color:white;
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-opacity: 1.0;
+    -fx-text-fill: white;
+}
+.login_button:hover{
+    -fx-background-color: white;
+    -fx-text-fill: linear-gradient(to bottom right, #6D0096, #A00000);
+
+}
+
+.btnPaneles{
+    -fx-background-color: linear-gradient(to bottom right, #6D0096, #A00000);
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-opacity: 1.0;
+    -fx-text-fill:white;
+}
+
+.btnPaneles:hover{
+    -fx-background-color: linear-gradient(to bottom right,#6D0096, #A00000);
+}
+
+.one_label{
+    -fx-text-fill:#6D0096;
+    -fx-background-color: transparent;
+}
+
+.one_label:hover {
+    -fx-underline: true;
+    -fx-text-fill: linear-gradient(to bottom, #6D0096, #A00000);
+    -fx-background-color: transparent;
+}
+
+.comboUsuario{
+    -fx-background-color: transparent;
+    -fx-border-color:linear-gradient(to bottom right, #6D0096, #A00000);
+    -fx-border-radius: 30;
+    -fx-border-width: 1px;
+    -fx-background-radius: 30;
+}
+
+.comboUsuario:hover{
+    -fx-border-width: 2px;
+}
+
+.paquete_item{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius:30;
+}
+
+.shadow {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 5);
+}
+
+.reservaButton{
+    -fx-background-color: orange;
+    -fx-border-color: #ff9100;
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-opacity: 1.0;
+    -fx-text-fill: white;
+}
+.reservaButton:hover{
+    -fx-background-color: #ff9100;
+
+}
+
+
+.eliminarBtn{
+    -fx-background-color: #ea2828;
+    -fx-border-color: #ea2828;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-opacity: 1.0;
+    -fx-text-fill: white;
+}
+.eliminarBtn:hover{
+    -fx-background-color: #e50d0d;
+
+}
+
+.confirmarBtn{
+    -fx-background-color: #0889bd;
+    -fx-border-color: #0889bd;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-opacity: 1.0;
+    -fx-text-fill: white;
+}
+.confirmarBtn:hover{
+    -fx-background-color: #11A7E5FF;
+
+}

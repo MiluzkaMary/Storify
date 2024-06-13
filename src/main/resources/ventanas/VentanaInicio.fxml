@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="panelPrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.storify.controllers.VentanaInicioController">
+   <children>
+      <AnchorPane fx:id="barraSuperior" prefHeight="78.0" prefWidth="1300.0" styleClass="white-color" stylesheets="@../aplicacion.css">
+         <children>
+            <Text layoutX="602.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BarraSuperior" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="panelDerecho" layoutX="286.0" layoutY="78.0" prefHeight="608.0" prefWidth="998.0">
+         <children>
+            <Text layoutX="499.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PanelDerecho" />
+         </children></AnchorPane>
+      <ScrollPane layoutY="77.0" prefViewportHeight="606.0" prefViewportWidth="270.0">
+         <content>
+            <AnchorPane fx:id="panelIzquierdo" layoutY="77.0" prefHeight="606.0" prefWidth="270.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

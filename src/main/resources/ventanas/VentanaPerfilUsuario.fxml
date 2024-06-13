@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="622.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.storify.controllers.VentanaPerfilUsuarioController">
+   <children>
+      <ImageView fitHeight="622.0" fitWidth="1025.0">
+         <image>
+            <Image url="@../imagenes/Fondo Ventana Perfil.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="14.0" layoutY="19.0" prefHeight="100.0" prefWidth="991.0" stylesheets="@../aplicacion.css">
+         <styleClass>
+            <String fx:value="white-bg" />
+            <String fx:value="shadowDarkPane" />
+         </styleClass>
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="991.0">
+               <image>
+                  <Image url="@../imagenes/Fondo Panel 3.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="14.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Información De Perfil" wrappingWidth="554.0">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="14.0" layoutY="135.0" prefHeight="300.0" prefWidth="300.0" stylesheets="@../aplicacion.css">
+         <styleClass>
+            <String fx:value="white-bg" />
+            <String fx:value="shadowDarkPane" />
+         </styleClass>
+         <children>
+            <ImageView fitHeight="300.0" fitWidth="300.0">
+               <image>
+                  <Image url="@../imagenes/Fondo Panel 4.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnFavoritos" fitHeight="200.0" fitWidth="200.0" layoutX="50.0" layoutY="40.0" onMouseClicked="#mostrarVentanaFavoritos">
+               <image>
+                  <Image url="@../imagenes/Corazon Icon.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Text layoutX="81.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tus Favoritos">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="327.0" layoutY="135.0" prefHeight="464.0" prefWidth="678.0" stylesheets="@../aplicacion.css">
+         <styleClass>
+            <String fx:value="white-bg" />
+            <String fx:value="shadowDarkPane" />
+         </styleClass>
+         <children>
+            <ImageView fitHeight="464.0" fitWidth="697.0" layoutX="-9.0" layoutY="1.0">
+               <image>
+                  <Image url="@../imagenes/Fondo Panel 2.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtNombre" editable="false" layoutX="190.0" layoutY="65.0" prefHeight="51.0" prefWidth="427.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextField>
+            <Text layoutX="68.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtApellido" editable="false" layoutX="190.0" layoutY="137.0" prefHeight="51.0" prefWidth="427.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextField>
+            <Text layoutX="67.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtCorreo" editable="false" layoutX="191.0" layoutY="205.0" prefHeight="51.0" prefWidth="427.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextField>
+            <Text layoutX="68.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Correo">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtUsername" editable="false" layoutX="190.0" layoutY="277.0" prefHeight="51.0" prefWidth="427.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextField>
+            <Text layoutX="67.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="67.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtShowPassword" editable="false" layoutX="190.0" layoutY="348.0" onKeyReleased="#ShowPasswordOnAction" prefHeight="51.0" prefWidth="372.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="txtHidePassword" layoutX="190.0" layoutY="348.0" onKeyReleased="#HidePasswordKeyReleased" prefHeight="51.0" prefWidth="372.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </PasswordField>
+            <ImageView fx:id="closeEye" fitHeight="60.0" fitWidth="60.0" layoutX="571.0" layoutY="344.0" onMouseClicked="#Close_Eye_OnClickAction" visible="false">
+               <image>
+                  <Image url="@../imagenes/Hide Eye Icon.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="openEye" fitHeight="60.0" fitWidth="60.0" layoutX="571.0" layoutY="344.0" onMouseClicked="#Open_Eye_OnClickAction">
+               <image>
+                  <Image url="@../imagenes/Show Eye Icon.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="14.0" layoutY="452.0" prefHeight="147.0" prefWidth="300.0" stylesheets="@../aplicacion.css">
+         <styleClass>
+            <String fx:value="white-bg" />
+            <String fx:value="shadowDarkPane" />
+         </styleClass>
+         <children>
+            <ImageView fitHeight="147.0" fitWidth="300.0">
+               <image>
+                  <Image url="@../imagenes/Fondo Panel 5.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnEditar" layoutX="9.0" layoutY="26.0" mnemonicParsing="false" onAction="#habilitarEdicion" prefHeight="96.0" prefWidth="282.0" stylesheets="@../aplicacion.css" text="Editar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="45.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="cursor_hand" />
+                  <String fx:value="btnPaneles" />
+               </styleClass>
+            </Button>
+            <Button fx:id="btnConfirmar" layoutX="9.0" layoutY="26.0" mnemonicParsing="false" onAction="#confirmarEdicion" prefHeight="96.0" prefWidth="282.0" stylesheets="@../aplicacion.css" text="Confirmar" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="System Bold" size="45.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="cursor_hand" />
+                  <String fx:value="btnPaneles" />
+               </styleClass>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</Pane>

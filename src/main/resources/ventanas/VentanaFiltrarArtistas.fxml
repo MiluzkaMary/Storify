@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="622.0" prefWidth="1025.0" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.storify.controllers.VentanaFiltrarArtistasController">
+   <children>
+      <Pane layoutX="10.0" layoutY="64.0" prefHeight="118.0" prefWidth="990.0" stylesheets="@../aplicacion.css">
+         <children>
+            <Text fill="#323232" layoutX="14.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filtrar Artistas">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#838181" layoutX="16.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nacionalidad">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtTipoArtista" fill="#838181" layoutX="327.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de Artista">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="comboNacionalidad" layoutX="14.0" layoutY="57.0" minHeight="0.0" prefHeight="29.0" prefWidth="250.0" promptText="Elegir nacionalidad" />
+            <ComboBox fx:id="comboTipoArtista" layoutX="327.0" layoutY="57.0" minHeight="0.0" prefHeight="29.0" prefWidth="250.0" promptText="Elegir tipo de artista" />
+            <Pane layoutX="827.0" layoutY="54.0" prefHeight="35.0" prefWidth="113.0" styleClass="filtroPanel" stylesheets="@../aplicacion.css">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#filtrarMinimo" prefHeight="35.0" prefWidth="113.0" stylesheets="@../aplicacion.css" text="Filtrar (1)      " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="transparent" />
+                        <String fx:value="cursor_hand" />
+                     </styleClass>
+                  </Button>
+                  <ImageView fitHeight="20.0" fitWidth="18.0" layoutX="81.0" layoutY="7.0">
+                     <image>
+                        <Image url="@../imagenes/filtrar.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="btnFiltrarMax" layoutX="668.0" layoutY="54.0" prefHeight="35.0" prefWidth="113.0" styleClass="filtroPanel" stylesheets="@../aplicacion.css">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#filtrarMaximo" prefHeight="35.0" prefWidth="113.0" stylesheets="@../aplicacion.css" text="Filtrar (*)      " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="transparent" />
+                        <String fx:value="cursor_hand" />
+                     </styleClass>
+                  </Button>
+                  <ImageView fitHeight="20.0" fitWidth="18.0" layoutX="81.0" layoutY="9.0">
+                     <image>
+                        <Image url="@../imagenes/filtrar.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+         <styleClass>
+            <String fx:value="white-bg" />
+            <String fx:value="shadowPane" />
+         </styleClass>
+      </Pane>
+      <Pane layoutX="10.0" layoutY="20.0" prefHeight="28.0" prefWidth="990.0" stylesheets="@../aplicacion.css">
+         <children>
+            <TextField layoutY="-2.0" minHeight="-Infinity" prefHeight="29.0" prefWidth="878.0" promptText="Buscar por nombre del artista" styleClass="transparent" stylesheets="@../aplicacion.css" />
+            <Separator layoutX="900.0" layoutY="-0.0" orientation="VERTICAL" prefHeight="27.0" prefWidth="3.0" />
+            <Button layoutX="903.0" layoutY="-2.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="99.0" stylesheets="@../aplicacion.css" text=" Buscar" textFill="#838181">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="transparent" />
+                  <String fx:value="cursor_hand" />
+               </styleClass>
+            </Button>
+            <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="911.0" layoutY="5.0">
+               <image>
+                  <Image url="@../imagenes/lupa.png" />
+               </image>
+            </ImageView>
+         </children>
+         <styleClass>
+            <String fx:value="white-bg" />
+            <String fx:value="shadowPane" />
+         </styleClass>
+      </Pane>
+      <ScrollPane layoutX="14.0" layoutY="211.0" prefViewportHeight="310.0" prefViewportWidth="990.0">
+         <content>
+            <TableView fx:id="tablaArtistas" layoutX="14.0" layoutY="211.0" prefHeight="310.0" prefWidth="990.0">
+              <columns>
+                <TableColumn fx:id="columnaCodigo" prefWidth="181.0" text="Código" />
+                <TableColumn fx:id="columnaNombre" prefWidth="226.0" text="Nombre" />
+                  <TableColumn fx:id="columnaNacionalidad" prefWidth="185.0" text="Nacionalidad" />
+                  <TableColumn fx:id="columnaTipoArtista" prefWidth="205.0" text="Tipo de artista" />
+                  <TableColumn fx:id="columnaNumCanciones" prefWidth="192.0" text="Número de canciones" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <Button layoutX="366.0" layoutY="546.0" mnemonicParsing="false" onAction="#verCanciones" prefHeight="31.0" prefWidth="279.0" text="Ver lista de canciones" />
+   </children>
+</Pane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="300.0" minWidth="300.0" prefHeight="377.0" prefWidth="300.0" stylesheets="@../aplicacion.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.storify.controllers.ItemCancionController">
+   <children>
+      <Text fx:id="lblNombreCancion" fill="#433c3c" layoutX="12.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre cancion" wrappingWidth="275.06787109375">
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="lblAutorNombre" fill="#5a5050" layoutX="16.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Autor nombre" wrappingWidth="242.75390625">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="portada" fitHeight="300.0" fitWidth="300.0" onMouseClicked="#abrirVentanaYoutube" pickOnBounds="true" preserveRatio="true" />
+      <Text fx:id="txtAnio" fill="#433c3c" layoutX="234.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(2000)" wrappingWidth="57.06787109375">
+         <font>
+            <Font name="Calibri Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtDuracion" fill="#433c3c" layoutX="242.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1:56" wrappingWidth="57.06787109375">
+         <font>
+            <Font name="Calibri Bold" size="16.0" />
+         </font>
+      </Text>
+   </children>
+   <styleClass>
+      <String fx:value="paquete_item" />
+      <String fx:value="shadow" />
+   </styleClass>
+</AnchorPane>

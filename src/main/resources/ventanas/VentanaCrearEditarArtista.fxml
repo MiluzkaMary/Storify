@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="622.0" prefWidth="1025.0" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.storify.controllers.VentanaCrearEditarArtistaController">
+   <children>
+      <Pane layoutX="16.0" layoutY="16.0" prefHeight="593.0" prefWidth="992.0" stylesheets="@../aplicacion.css">
+         <children>
+            <Text fill="#433c3c" layoutX="657.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de Artista:">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#433c3c" layoutX="662.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nacionalidad:">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#433c3c" layoutX="343.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Código:">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#433c3c" layoutX="339.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre:">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#433c3c" layoutX="36.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lista de Canciones del Artista">
+               <font>
+                  <Font name="Calibri Bold" size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtNombreArtista" layoutX="419.0" layoutY="29.0" minHeight="0.0" prefHeight="23.0" prefWidth="184.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtCodigo" layoutX="419.0" layoutY="72.0" minHeight="0.0" prefHeight="23.0" prefWidth="184.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btnGuardar" layoutX="822.0" layoutY="326.0" mnemonicParsing="false" onAction="#guardarCambios" prefHeight="29.0" prefWidth="136.0" text="Guardar">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCrear" layoutX="822.0" layoutY="326.0" mnemonicParsing="false" onAction="#crearArtista" prefHeight="29.0" prefWidth="136.0" text="Crear" visible="false">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <TableView fx:id="tablaCancionesArtista" layoutX="37.0" layoutY="198.0" prefHeight="357.0" prefWidth="659.0">
+               <columns>
+                  <TableColumn fx:id="columnaCodigo" prefWidth="116.0" text="Código" />
+                  <TableColumn fx:id="columnaNombre" prefWidth="124.0" text="Nombre" />
+                  <TableColumn fx:id="columnaAlbum" prefWidth="141.0" text="Albúm" />
+                  <TableColumn fx:id="columnaDuracion" prefWidth="137.0" text="Duración" />
+                  <TableColumn fx:id="columnaGenero" prefWidth="140.0" text="Género" />
+               </columns>
+            </TableView>
+            <Button layoutX="36.0" layoutY="155.0" mnemonicParsing="false" onAction="#eliminarCancion" prefHeight="29.0" prefWidth="150.0" text="Eliminar Cancion">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Text fill="#433c3c" layoutX="26.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Datos del Artista:">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnVolver" layoutX="822.0" layoutY="369.0" mnemonicParsing="false" onAction="#volver" prefHeight="29.0" prefWidth="136.0" text="Volver">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="comboTipo" layoutX="768.0" layoutY="22.0" prefHeight="24.0" prefWidth="171.0" />
+            <ComboBox fx:id="comboNacionalidad" layoutX="768.0" layoutY="59.0" prefHeight="24.0" prefWidth="171.0" />
+            <Button fx:id="btnCargarArtista" layoutX="36.0" layoutY="55.0" mnemonicParsing="false" onAction="#cargarArtista" prefHeight="25.0" prefWidth="150.0" text="Cargar Artista" />
+         </children>
+         <styleClass>
+            <String fx:value="white-bg" />
+            <String fx:value="shadowPane" />
+         </styleClass>
+      </Pane>
+   </children>
+</Pane>

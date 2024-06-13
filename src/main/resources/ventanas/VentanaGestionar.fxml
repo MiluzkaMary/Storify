@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="622.0" prefWidth="1025.0" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.storify.controllers.VentanaGestionarController">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="164.0" prefWidth="990.0" stylesheets="@../aplicacion.css">
+         <children>
+            <Text fx:id="txtTituloGestion" fill="#323232" layoutX="425.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestión de Canciones" wrappingWidth="426.1279296875">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnDetalles" layoutX="513.0" layoutY="66.0" minHeight="0.0" mnemonicParsing="false" onAction="#detalles" prefHeight="27.0" prefWidth="104.0" styleClass="btnIngresar" stylesheets="@../aplicacion.css" text="Detalles" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Calibri Bold" size="12.0" />
+               </font>
+            </Button>
+            <Text fx:id="txtAdvertencia" fill="#323232" layoutX="56.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Antes de seleccionar una opción de gestión, tenga en cuenta que debe seleccionar una cancion" wrappingWidth="957.4482421875">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnCrear" layoutX="373.0" layoutY="66.0" minHeight="0.0" mnemonicParsing="false" onAction="#crear" prefHeight="27.0" prefWidth="104.0" styleClass="btnIngresar" stylesheets="@../aplicacion.css" text="Crear" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Calibri Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnEliminar" layoutX="373.0" layoutY="113.0" minHeight="0.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="27.0" prefWidth="104.0" styleClass="btnIngresar" stylesheets="@../aplicacion.css" text="Eliminar" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Calibri Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnEditar" layoutX="513.0" layoutY="113.0" minHeight="0.0" mnemonicParsing="false" onAction="#editar" prefHeight="27.0" prefWidth="104.0" styleClass="btnIngresar" stylesheets="@../aplicacion.css" text="Editar" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Calibri Bold" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="28.0" layoutY="38.0">
+               <image>
+                  <Image url="@../imagenes/alert.png" />
+               </image>
+            </ImageView>
+         </children>
+         <styleClass>
+            <String fx:value="white-bg" />
+            <String fx:value="shadowPane" />
+         </styleClass>
+      </Pane>
+      <ScrollPane fx:id="scrollGrid" layoutX="14.0" layoutY="194.0" prefHeight="417.0" prefWidth="990.0" styleClass="transparent" stylesheets="@../aplicacion.css">
+         <content>
+            <GridPane fx:id="grid" layoutY="-20.0" minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="0.0">
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="scrollTabla" layoutX="17.0" layoutY="194.0" prefViewportHeight="386.0" prefViewportWidth="990.0" visible="false">
+         <content>
+            <TableView fx:id="tablaArtistas" layoutX="17.0" layoutY="194.0" prefHeight="386.0" prefWidth="990.0">
+               <columns>
+                  <TableColumn fx:id="columnaCodigo" prefWidth="181.0" text="Código" />
+                  <TableColumn fx:id="columnaNombre" prefWidth="226.0" text="Nombre" />
+                  <TableColumn fx:id="columnaNacionalidad" prefWidth="185.0" text="Nacionalidad" />
+                  <TableColumn fx:id="columnaTipoArtista" prefWidth="205.0" text="Tipo de artista" />
+                  <TableColumn fx:id="columnaNumCanciones" prefWidth="192.0" text="Número de canciones" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+   </children>
+</Pane>

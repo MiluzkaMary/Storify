@@ -1,0 +1,9 @@
+#Artistas
+ART005;Michael Jackson;Estados Unidos;SOLISTA
+ART006;The Beatles;Reino Unido;BANDA
+
+#Canciones
+Michael Jackson;Thriller;Thriller;Caratula;1982;5.57;POP;URL1
+Michael Jackson;Billie Jean;Thriller;Caratula;1982;4.54;POP;URL2
+The Beatles;Hey Jude;The Beatles (The White Album);Caratula;1968;7.11;ROCK;URL3
+The Beatles;Let It Be;Let It Be;Caratula;1970;3.50;ROCK;URL4

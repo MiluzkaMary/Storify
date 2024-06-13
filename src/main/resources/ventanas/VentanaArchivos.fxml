@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="622.0" prefWidth="1025.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.storify.controllers.VentanaArchivosController">
+   <children>
+      <Pane layoutX="20.0" layoutY="22.0" prefHeight="579.0" prefWidth="983.0" stylesheets="@../aplicacion.css">
+         <children>
+            <Text fill="#323232" layoutX="398.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carga de Archivos de Texto" wrappingWidth="426.1279296875">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnCargar" layoutX="354.0" layoutY="80.0" mnemonicParsing="false" onAction="#cargarArchivo" prefHeight="31.0" prefWidth="276.0" text="Subir Archivo Texto" />
+            <TextArea fx:id="textArea" editable="false" layoutX="39.0" layoutY="146.0" prefHeight="366.0" prefWidth="894.0" />
+         </children>
+         <styleClass>
+            <String fx:value="shadowPane" />
+            <String fx:value="white-bg" />
+         </styleClass>
+      </Pane>
+   </children>
+</Pane>
